@@ -14,6 +14,7 @@
         packages = [
           pkgs.uv
         ];
+        SSL_CERT_FILE = "/etc/ssl/certs/ca-bundle.crt";
       };
 
     };

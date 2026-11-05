@@ -17,6 +17,8 @@ class ProjectReader:
         return Project(
             deserialisoitu["project"]["name"],
             deserialisoitu["project"]["description"],
+            deserialisoitu["project"]["authors"],
+            deserialisoitu["project"]["license"],
             deserialisoitu["project"]["dependencies"],
             deserialisoitu["dependency-groups"]["dev"]
         )

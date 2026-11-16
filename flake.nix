@@ -13,6 +13,7 @@
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           pkgs.uv
+          pkgs.python314Packages.python-lsp-server
         ];
         SSL_CERT_FILE = "/etc/ssl/certs/ca-bundle.crt";
       };
